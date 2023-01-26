@@ -10,4 +10,8 @@ const Routes = () => {
             element: <Home />,
         },
     ])
+
+    return <RouterProvider router={router}/>
 };
+
+export default Routes;
