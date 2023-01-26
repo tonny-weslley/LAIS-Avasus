@@ -4,8 +4,13 @@ import {
   NavbarLogo,
   NavbarNav,
   NavbarSearch,
+  NavbarAuthButtons,
+  ResponsiveNavbar
 } from "../styled-components/Navbar";
+import { Button, ButtonVariant } from "../styled-components/Buttons";
+
 import { BsSearch } from "react-icons/bs";
+import {AiOutlineMenu} from "react-icons/ai";
 const Navbar = () => {
   return (
     <NavbarDiv>
@@ -38,11 +43,20 @@ const Navbar = () => {
         <input type="text" placeholder="Buscar por um assunto..." />
       </NavbarSearch>
 
-      <div className="auth-buttons">
-        <button className="login">Login</button>
-        <button className="register">Registrar</button>
-      </div>
+      <NavbarAuthButtons>
+        <Button>Cadastrar</Button>
+        <ButtonVariant>Entrar</ButtonVariant>
+      </NavbarAuthButtons>
+
+      <ResponsiveNavbar>
+        <ButtonVariant>
+          <AiOutlineMenu />
+        </ButtonVariant>
+      </ResponsiveNavbar>
     </NavbarDiv>
+
+    
+
   );
 };
 

@@ -1,12 +1,12 @@
-import Navbar from "../../components/Navbar";
+import {Section} from '../../components/styled-components/Sections';
+
 const Home = () => {
 
     return(
 
-        <div>
-            <Navbar />
+        <Section>
             <h1>Home</h1>
-        </div>
+        </Section>
 
     );
 

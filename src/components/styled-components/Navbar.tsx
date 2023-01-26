@@ -21,6 +21,8 @@ export const NavbarLogo = styled.figure`
 `;
 
 export const NavbarNav = styled.nav`
+    display: flex;
+    align-items: center;
     ul {
         display: flex;
         list-style: none;
@@ -38,6 +40,9 @@ export const NavbarNav = styled.nav`
             }
         }
     }
+    @media (max-width: 1281px) {
+        display: none;
+    }
 `;
 
 export const NavbarSearch = styled.div`
@@ -46,6 +51,7 @@ export const NavbarSearch = styled.div`
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 2rem;
     height: 1.8rem;
+    width: 20rem;
     padding: 0 0.7rem;
     color: var(--color-primary);
     svg {
@@ -56,9 +62,33 @@ export const NavbarSearch = styled.div`
         border: none;
         outline: none;
         height: 70%;
+        width: 100%;
         padding: 0 1rem;
         font-size: 0.9rem;
         font-weight: 500;
+    }
+    
+    @media (max-width: 1281px) {
+        display: none;
+    }
+`;
+
+export const NavbarAuthButtons = styled.div`
+
+    display: flex;
+    align-items: center;
+    @media (max-width: 1281px) {
+        display: none;
+    }
+
+
+`;
+
+export const ResponsiveNavbar = styled.div`
+
+    display: none;
+    @media (max-width: 1281px) {
+        display: flex;
     }
 
 `;

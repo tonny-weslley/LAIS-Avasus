@@ -3,6 +3,9 @@
   --color-primary: #2F2E41;
   --color-primary-hover: #D2202C;
 
+  --color-grey: #707070;
+  --color-white: #FFFFFF;
+
   font-family: 'Montserrat', sans-serif;
 
 
@@ -11,5 +14,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#avasus{
+  display: flex;
+  flex-direction: column;
 }
 
