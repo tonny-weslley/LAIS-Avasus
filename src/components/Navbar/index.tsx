@@ -1,4 +1,6 @@
 import LogoAvasus from "../../assets/logos/avasus.svg";
+import { BsSearch } from "react-icons/bs";
+import {AiOutlineMenu} from "react-icons/ai";
 import {
   NavbarDiv,
   NavbarLogo,
@@ -8,10 +10,19 @@ import {
   ResponsiveNavbar
 } from "../styled-components/Navbar";
 import { Button, ButtonVariant } from "../styled-components/Buttons";
+import {useDispatch} from "react-redux";
+import {toggleDrawer} from "../../redux/Drawer/slice"
 
-import { BsSearch } from "react-icons/bs";
-import {AiOutlineMenu} from "react-icons/ai";
+
+
 const Navbar = () => {
+  const dispatch = useDispatch()
+
+
+  const handleToggleDrawer = () => {
+    dispatch(toggleDrawer())
+  }
+
   return (
     <NavbarDiv>
       <NavbarLogo>
@@ -49,7 +60,7 @@ const Navbar = () => {
       </NavbarAuthButtons>
 
       <ResponsiveNavbar>
-        <ButtonVariant>
+        <ButtonVariant onClick={handleToggleDrawer}>
           <AiOutlineMenu />
         </ButtonVariant>
       </ResponsiveNavbar>
