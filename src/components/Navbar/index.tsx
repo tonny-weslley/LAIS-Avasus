@@ -15,6 +15,7 @@ import {toggleDrawer} from "../../redux/Drawer/slice"
 
 
 
+
 const Navbar = () => {
   const dispatch = useDispatch()
 
@@ -64,6 +65,7 @@ const Navbar = () => {
           <AiOutlineMenu />
         </ButtonVariant>
       </ResponsiveNavbar>
+
     </NavbarDiv>
 
     

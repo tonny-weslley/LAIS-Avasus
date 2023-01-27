@@ -8,4 +8,6 @@ const store = configureStore({
     middleware: [logger],
 });
 
+export type RootState = ReturnType<typeof store.getState>
+
 export default store;
