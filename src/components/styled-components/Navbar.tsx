@@ -74,17 +74,14 @@ export const NavbarSearch = styled.div`
   }
 `;
 
-
 export const NavbarInline = styled(NavbarNav)`
-
   margin-top: 1rem;
-  a{
+  a {
     font-weight: bold;
   }
   @media (max-width: 1281px) {
     display: flex;
   }
-
 `;
 
 export const NavbarAuthButtons = styled.div`
@@ -119,7 +116,7 @@ export const NavbarDrawer = styled.div`
       a {
         text-decoration: none;
         color: var(--color-primary);
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 500;
         margin: 1rem 0;
         transition: all 0.3s ease-in-out;
