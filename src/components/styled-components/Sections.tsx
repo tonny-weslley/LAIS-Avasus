@@ -15,3 +15,13 @@ export const Modulos = styled.section`
 
 `;
 
+export const CenterSection = styled.section`
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+
+`;

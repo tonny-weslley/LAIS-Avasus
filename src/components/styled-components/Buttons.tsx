@@ -30,13 +30,15 @@ export const ButtonVariant = styled(Button)`
 `;
 
 export const ButtonDrawer = styled(Button)`
-    width: 100%;
+    border-radius: 4px;
+    width: 90%;
     height: 3rem;
     margin: 1vh auto;
 `;
 
 export const ButtonDrawerVariant = styled(ButtonVariant)`
-    width: 100%;
+    border-radius: 4px;
+    width: 90%;
     height: 3rem;
     margin: 1vh auto;
 `;

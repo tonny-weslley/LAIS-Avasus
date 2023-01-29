@@ -9,6 +9,8 @@ import {
   ButtonDrawerVariant,
 } from "../styled-components/Buttons";
 
+import {CenterSection} from '../styled-components/Sections';
+
 export const NavDrawer = () => {
   const drawer = useSelector((state: RootState) => state.drawer);
   const dispatch = useDispatch();
@@ -42,10 +44,10 @@ export const NavDrawer = () => {
           </ul>
         </nav>
 
-        <div>
+        <CenterSection>
           <ButtonDrawer>Entrar</ButtonDrawer>
           <ButtonDrawerVariant>Cadastrar</ButtonDrawerVariant>
-        </div>
+        </CenterSection>
       </NavbarDrawer>
     </Drawer>
   );
