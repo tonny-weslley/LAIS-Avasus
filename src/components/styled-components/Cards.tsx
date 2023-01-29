@@ -96,3 +96,16 @@ export const ParceirosCardItem = styled.div`
     margin: 0px auto 1rem auto;
   }
 `;
+
+export const CardRating = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+    }
+`;

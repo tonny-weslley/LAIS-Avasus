@@ -6,6 +6,7 @@ import { Title } from "../../components/styled-components/Texts";
 import InlineMenu from "../../components/InlineMenu";
 import { ButtonVerMais } from "../../components/styled-components/Buttons";
 import Parceiros from "../../components/Parceiros";
+import Footer from "../../components/Footer";
 
 import { useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
@@ -51,6 +52,7 @@ const Home = () => {
 
       <Parceiros />
 
+      <Footer/>
     </Section>
   );
 };

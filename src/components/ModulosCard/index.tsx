@@ -7,6 +7,7 @@ import {
   CardInfo,
   CardStatusItem,
   CardStatus,
+  CardRating
 } from "../styled-components/Cards";
 import { Subtitle, TextVariant } from "../styled-components/Texts";
 import { ButtonModulo } from "../styled-components/Buttons";
@@ -25,6 +26,7 @@ const ModulosCard = (curso: any) => {
   });
 
   return (
+
     <CursosCard>
       <CardFigure>
         <img src={capa} />
@@ -47,7 +49,10 @@ const ModulosCard = (curso: any) => {
         </CardStatusItem>
       </CardStatus>
 
-      <StyledRating value={avaliacao} precision={0.2} readOnly />
+      <CardRating>
+        <StyledRating value={avaliacao} precision={0.1} readOnly />
+        <p>{avaliacao.substring(0, avaliacao.length - 1)}</p>
+      </CardRating>
 
       <ButtonModulo>Ver Módulo</ButtonModulo>
     </CursosCard>

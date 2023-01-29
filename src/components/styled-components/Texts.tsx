@@ -43,3 +43,10 @@ export const TextVariant2 = styled(Text)`
   font-size: 0.8rem;
 
 `;
+
+export const TileAlternative = styled(Title)`
+
+  font-size: 1.3rem;
+  color: var(--color-white);
+
+`;
