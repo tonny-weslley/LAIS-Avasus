@@ -12,6 +12,7 @@ export const Modulos = styled.section`
     margin: 5vh auto;
     width: 80%;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;

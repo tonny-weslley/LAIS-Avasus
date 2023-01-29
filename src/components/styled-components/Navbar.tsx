@@ -75,13 +75,25 @@ export const NavbarSearch = styled.div`
 `;
 
 export const NavbarInline = styled(NavbarNav)`
-  margin-top: 1rem;
-  a {
-    font-weight: bold;
+
+  margin-top: 2vh;
+  display: flex;
+  width: 100%;
+  justify-content: start;
+
+`;
+
+export const NavbarInilineAction = styled.div`
+
+  display: flex;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  &:hover {
+    cursor: pointer;
+    color: var(--color-primary-hover);
   }
-  @media (max-width: 1281px) {
-    display: flex;
-  }
+
+
 `;
 
 export const NavbarAuthButtons = styled.div`

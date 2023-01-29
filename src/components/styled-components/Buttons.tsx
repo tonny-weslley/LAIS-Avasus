@@ -70,6 +70,7 @@ export const ButtonModulo = styled(Button)`
     width: 80%;
     padding: 1.4vh;
     margin-top: 3vh;
+    font-weight: bold;
     @media (min-width: 768px) {
         
         padding: 1vh;
@@ -81,3 +82,10 @@ export const ButtonModulo = styled(Button)`
 `;
 
 
+export const ButtonVerMais = styled(Button)`
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 3vh;
+    border-radius: 15px;
+    padding: 1vh 8vw;
+`;

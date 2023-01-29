@@ -1,16 +1,35 @@
 import { useState, useEffect } from "react";
-import { getFeatured } from "../../services/CursosRequest";
+import { getFeatured, getAvaliados, getRecentes } from "../../services/CursosRequest";
 import ModulosCard from "../../components/ModulosCard";
 import { Section, Modulos } from "../../components/styled-components/Sections";
 import { Title } from "../../components/styled-components/Texts";
 import InlineMenu from "../../components/InlineMenu";
+import { ButtonVerMais } from "../../components/styled-components/Buttons";
+
+import { useSelector } from "react-redux";
+import { RootState } from "../../redux/store";
+
 const Home = () => {
+  const { selected } = useSelector((state: RootState) => state.modulosSession);
+
   const [cursosPopulares, setCursosPopulares] = useState([]);
+  const [cursosRecentes, setCursosRecentes] = useState([]);
+  const [cursosMaisAvaliados, setcursosMaisAvaliados] = useState([]);
 
   useEffect(() => {
     getFeatured(3).then((response) => {
       setCursosPopulares(response.data);
     });
+
+    getAvaliados(3).then((response) => {
+      setcursosMaisAvaliados(response.data);
+    });
+  
+    getRecentes(3).then((response) => {
+      setCursosRecentes(response.data);
+    });
+
+
   }, []);
 
   return (
@@ -18,9 +37,15 @@ const Home = () => {
       <Modulos>
         <Title>Módulos Educacionais</Title>
         <InlineMenu />
-        {cursosPopulares.map((curso) => (
-            <ModulosCard curso={curso} />
-        ))}
+
+        {selected === "populares" &&
+          cursosPopulares.map((curso) => <ModulosCard curso={curso} />)}
+        {selected === "recentes" &&
+          cursosRecentes.map((curso) => <ModulosCard curso={curso} />)}
+        {selected === "avaliados" &&
+          cursosMaisAvaliados.map((curso) => <ModulosCard curso={curso} />)}
+
+        <ButtonVerMais>Ver mais</ButtonVerMais>
       </Modulos>
     </Section>
   );

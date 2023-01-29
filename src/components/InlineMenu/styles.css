@@ -1,0 +1,7 @@
+.selected {
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.selected:hover{
+    border-bottom: 2px solid var(--color-primary-hover);
+}

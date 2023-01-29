@@ -10,8 +10,7 @@ import {
 } from "../styled-components/Buttons";
 
 import {CenterSection} from '../styled-components/Sections';
-
-export const NavDrawer = () => {
+const NavDrawer = () => {
   const drawer = useSelector((state: RootState) => state.drawer);
   const dispatch = useDispatch();
 

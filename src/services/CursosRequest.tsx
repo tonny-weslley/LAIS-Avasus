@@ -12,3 +12,10 @@ export async function getFeatured(limit: number) {
   return http.get(`/cursos?_sort=matriculados&_order=desc&_limit=${limit}`);
 }
 
+export async function getAvaliados(limit: number) {
+  return http.get(`/cursos?_sort=avaliacao&_order=desc&_limit=${limit}`);
+}
+
+export async function getRecentes(limit: number) {
+  return http.get(`/cursos?_sort=criado_em&_order=desc&_limit=${limit}`);
+}
