@@ -9,11 +9,14 @@ export const Title = styled.h1`
 `;
 
 export const Subtitle = styled.h2`
+    margin: 1rem auto;
     color: var(--color-primary);
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin: auto;
+    font-size: 1rem;
+    font-weight: bold;
     width: fit-content;
+    @media(min-width: 768px){
+        font-size: 1rem
+    }
 `;
 
 export const Text = styled.p`
@@ -28,5 +31,5 @@ export const Text = styled.p`
 
 export const TextVariant = styled(Text)`
     color: var(--color-primary-hover);
-    
+    font-size: 0.8rem;
 `;

@@ -10,7 +10,7 @@ export const Section = styled.section`
 export const Modulos = styled.section`
 
     margin: 5vh auto;
-    width: 50vw;
+    width: 80%;
 
 
 `;

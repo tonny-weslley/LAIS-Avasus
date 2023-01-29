@@ -62,3 +62,12 @@ export const ButtonExit = styled(Button)`
         }
     }
 `;
+
+export const ButtonModulo = styled(Button)`
+
+    width: 80%;
+    padding: 1.4vh;
+    margin-top: 3vh;
+
+
+`;
