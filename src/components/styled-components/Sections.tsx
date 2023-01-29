@@ -11,6 +11,11 @@ export const Modulos = styled.section`
 
     margin: 5vh auto;
     width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
 
 
 `;

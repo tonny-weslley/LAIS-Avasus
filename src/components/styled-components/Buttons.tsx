@@ -70,6 +70,14 @@ export const ButtonModulo = styled(Button)`
     width: 80%;
     padding: 1.4vh;
     margin-top: 3vh;
+    @media (min-width: 768px) {
+        
+        padding: 1vh;
+        margin: 0px 0px 0px 1vw;
+    
+    }
 
 
 `;
+
+
