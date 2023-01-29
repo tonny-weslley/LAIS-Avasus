@@ -5,6 +5,7 @@ import { Section, Modulos } from "../../components/styled-components/Sections";
 import { Title } from "../../components/styled-components/Texts";
 import InlineMenu from "../../components/InlineMenu";
 import { ButtonVerMais } from "../../components/styled-components/Buttons";
+import Parceiros from "../../components/Parceiros";
 
 import { useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
@@ -47,6 +48,9 @@ const Home = () => {
 
         <ButtonVerMais>Ver mais</ButtonVerMais>
       </Modulos>
+
+      <Parceiros />
+
     </Section>
   );
 };

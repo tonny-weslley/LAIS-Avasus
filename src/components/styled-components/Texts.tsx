@@ -36,3 +36,10 @@ export const TextVariant = styled.p`
     margin: 1vh 2vw;
   }
 `;
+
+export const TextVariant2 = styled(Text)`
+
+  color: var(--color-grey);
+  font-size: 0.8rem;
+
+`;

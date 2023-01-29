@@ -83,3 +83,30 @@ export const CardInfo = styled.div`
 
 
 `;
+
+export const ParceirosCard = styled.div`
+
+    background-color: var(--color-bg);
+    padding: 2rem;
+    display: grid;
+    width: 80%;
+    margin: 1rem auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 4rem;
+
+
+`;
+
+export const ParceirosCardItem = styled.div`
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2{
+        margin: 0px auto 1rem auto;
+    }
+    p{
+        margin: 0px auto 1rem auto;
+    }
+
+`;
