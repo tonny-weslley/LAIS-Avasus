@@ -88,7 +88,9 @@ export const LaisBrand = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 35%;
+  margin: 0 auto;
+  text-align: center;
   img {
     display: none;
     @media (min-width: 768px) {
@@ -98,6 +100,8 @@ export const LaisBrand = styled.div`
   }
   p {
     color: var(--color-white);
+    font-size: 0.8rem;
+    margin: 1vh auto;
   }
 `;
 
@@ -106,14 +110,15 @@ export const FooterNav = styled.nav`
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
     ul {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       li {
+        text-align: start;
         list-style: none;
         margin: 1vh 0;
         a {
@@ -121,6 +126,7 @@ export const FooterNav = styled.nav`
           text-decoration: none;
           &:hover {
             text-decoration: underline;
+            cursor: pointer;
           }
         }
       }
