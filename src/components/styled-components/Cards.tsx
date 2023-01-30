@@ -89,11 +89,15 @@ export const ParceirosCardItem = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: 1rem 0;
   h2 {
     margin: 0px auto 1rem auto;
   }
   p {
     margin: 0px auto 1rem auto;
+  }
+  @media(min-width: 768px) {
+    margin: 0;
   }
 `;
 

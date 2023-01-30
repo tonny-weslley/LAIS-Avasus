@@ -28,8 +28,7 @@ export const FooterSection = styled.footer`
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 2rem 0;
-  padding-top: 2rem;
+  margin-top: 6vh;
 `;
 
 export const FooterImage = styled.figure`
@@ -37,30 +36,117 @@ export const FooterImage = styled.figure`
 `;
 
 export const RealizacaoSection = styled.section`
-  padding: 2rem 0;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: var(--color-primary-hover);
-  
 `;
 
 export const RealizacaoSectionItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 3vh auto 0 auto;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+`;
 
+export const FooterInfo = styled.div`
+  width: 100%;
+  background-color: var(--color-bg-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh 0;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+`;
+
+export const FooterCopy = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2vh 0;
+  background-color: var(--color-bg-light);
+  p {
+    color: var(--color-white);
+  }
+`;
+
+export const LaisBrand = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  img {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      width: 10vw;
+    }
+  }
+  p {
+    color: var(--color-white);
+  }
+`;
+
+export const FooterNav = styled.nav`
+  display: none;
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 70%;
-    margin: 4vh auto 0px auto;
-    @media (min-width: 768px) {
-        flex-direction: row;
-        justify-content: space-around;
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      li {
+        list-style: none;
+        margin: 1vh 0;
+        a {
+          color: var(--color-white);
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
   }
-
 `;
 
-export const FooterInfo = styled.div`
-    background-color: var(--color-bg-dark);
+export const FooterSocial = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2vh 0 0 0;
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+`;
 
+export const SocialIcons = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2vh 0;
+  svg {
+    font-size: 2rem;
+    margin: 0 1vw;
+    color: var(--color-white);
+  }
 `;
