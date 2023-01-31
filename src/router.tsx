@@ -14,6 +14,7 @@ const Routes = () => {
             children: [
                 { path: '/', element: <Home /> },
                 { path: '/sobre-nos', element: <SobreNos /> },
+                { path: '/cursos', element: <Modulos />},
                 { path: '/cursos/modulos', element: <Modulos /> },
             ]
         },

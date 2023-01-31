@@ -142,3 +142,23 @@ export const NavbarDrawer = styled.div`
   @media (min-width: 768px) {
     width: 30vw;
 `;
+
+export const NavBreadcrumb = styled.div`
+  margin: 1vh 0;
+  display: flex;
+  a{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: var(--color-primary-hover);
+      cursor: pointer;
+    }
+    &:last-child{
+      font-weight: bold;
+    }
+  }
+
+`;

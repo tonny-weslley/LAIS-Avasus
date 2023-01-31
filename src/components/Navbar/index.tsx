@@ -42,9 +42,9 @@ const Navbar = () => {
           <li>
             <a
               onClick={(e) => {
-                handleSetPage(e, "home", "/");
+                handleSetPage(e, "/", "/");
               }}
-              className={`${page == "home" ? "nav-select" : "nav-text"}`}
+              className={`${page == "/" ? "nav-select" : "nav-text"}`}
             >
               Inicio
             </a>

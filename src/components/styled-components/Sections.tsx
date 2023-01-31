@@ -14,6 +14,12 @@ export const Modulos = styled.section`
   align-items: center;
 `;
 
+export const ModulosSection = styled(Modulos)`
+  justify-content: start;
+  align-items: start;
+
+`;
+
 export const CenterSection = styled.section`
   display: flex;
   flex-direction: column;
