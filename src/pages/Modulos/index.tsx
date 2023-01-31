@@ -4,6 +4,7 @@ import { ModulosSection } from "../../components/styled-components/Sections";
 import { Title } from "../../components/styled-components/Texts";
 import { getByCategory } from "../../services/CursosRequest";
 import { useEffect, useState } from "react";
+import InlineModuloMenu from "../../components/InlineModuloMenu";
 
 const Modulos = () => {
     const categorias = ['Especialização', 'Módulo de extensão', 'Síflis e outras ist', 'Covid 19', 'Preceptoria', 'Doenças raras', 'WebPalestras', 'Acessibilidade', 'Sistema prisional', 'OPAS'];
@@ -39,7 +40,7 @@ const Modulos = () => {
 
         <Title>Módulos Educacionais</Title>
 
-
+        <InlineModuloMenu menu={categorias} />
 
 
       </ModulosSection>

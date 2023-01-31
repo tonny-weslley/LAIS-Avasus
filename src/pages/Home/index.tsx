@@ -39,7 +39,7 @@ const Home = () => {
         <InlineMenu />
 
         {selected === "populares" &&
-          cursosPopulares.map((curso) => <ModulosCard key={curso} curso={curso} />)}
+          cursosPopulares.map((curso:any) => <ModulosCard key={curso} curso={curso} />)}
         {selected === "recentes" &&
           cursosRecentes.map((curso) => <ModulosCard key={curso} curso={curso} />)}
         {selected === "avaliados" &&

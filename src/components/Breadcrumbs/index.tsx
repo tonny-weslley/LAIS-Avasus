@@ -15,8 +15,6 @@ const BreadCrumbs = () => {
     navigate(redirect);
   };
 
-  console.log(breadcrumbs);
-
   return (
     <NavBreadcrumb>
       {breadcrumbs.map(({ match, key, breadcrumb }) => (
