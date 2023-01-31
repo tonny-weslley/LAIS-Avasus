@@ -64,7 +64,7 @@ const Navbar = () => {
           <li>
             <a
               onClick={(e) => {
-                handleSetPage(e, "cursos", "/cursos");
+                handleSetPage(e, "cursos", "/cursos/modulos");
               }}
               className={`${page == "cursos" ? "nav-select" : "nav-text"}`}
             >

@@ -1,6 +1,9 @@
 import { Outlet } from "react-router";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import NavDrawer from "../components/NavDrawer";
+import Parceiros from "../components/Parceiros";
+
 
 const App = () => {
   return (
@@ -8,6 +11,8 @@ const App = () => {
       <Navbar />
       <NavDrawer />
       <Outlet />
+      <Parceiros />
+      <Footer />
     </div>
   );
 };

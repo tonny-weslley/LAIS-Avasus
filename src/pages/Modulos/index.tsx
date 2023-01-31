@@ -1,10 +1,13 @@
+import { Section } from "../../components/styled-components/Sections";
+
 const Modulos = () => {
 
     return(
 
-        <div>
-            <h1>Modulos</h1>
-        </div>
+        <Section>
+            
+        </Section>
+        
     );
 };
 
