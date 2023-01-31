@@ -5,11 +5,7 @@ const Modulos = () => {
         <div>
             <h1>Modulos</h1>
         </div>
-
-
     );
-
-
 };
 
 export default Modulos;

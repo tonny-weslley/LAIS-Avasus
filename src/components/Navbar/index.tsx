@@ -14,21 +14,21 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleDrawer } from "../../redux/Drawer/slice";
 import { setPage } from "../../redux/Navbar/slice";
 import { RootState } from "../../redux/store";
-import { redirect } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const dispatch = useDispatch();
   const { page } = useSelector((state: RootState) => state.navbar);
-
+  const navigate = useNavigate();
 
   const handleToggleDrawer = () => {
     dispatch(toggleDrawer());
   };
 
-  const handleSetPage = (event: any, page: string) => {
+  const handleSetPage = (event: any, page: string, redirect:string) => {
     event.preventDefault();
     dispatch(setPage(page));
-    return true
+    navigate(redirect);
   };
 
   return (
@@ -42,7 +42,7 @@ const Navbar = () => {
           <li>
             <a
               onClick={(e) => {
-                handleSetPage(e, "home");
+                handleSetPage(e, "home", "/");
               }}
               className={`${page == "home" ? "nav-select" : "nav-text"}`}
             >
@@ -53,7 +53,7 @@ const Navbar = () => {
           <li>
             <a
               onClick={(e) => {
-                handleSetPage(e, "sobre-nos");
+                handleSetPage(e, "sobre-nos", "/sobre-nos");
               }}
               className={`${page == "sobre-nos" ? "nav-select" : "nav-text"}`}
             >
@@ -64,7 +64,7 @@ const Navbar = () => {
           <li>
             <a
               onClick={(e) => {
-                handleSetPage(e, "cursos");
+                handleSetPage(e, "cursos", "/cursos");
               }}
               className={`${page == "cursos" ? "nav-select" : "nav-text"}`}
             >
@@ -75,7 +75,7 @@ const Navbar = () => {
           <li>
             <a
               onClick={(e) => {
-                handleSetPage(e, "parceiros");
+                handleSetPage(e, "parceiros", "/parceiros");
               }}
               className={`${page == "parceiros" ? "nav-select" : "nav-text"}`}
             >
@@ -84,9 +84,9 @@ const Navbar = () => {
           </li>
 
           <li>
-            <a 
+            <a
               onClick={(e) => {
-                handleSetPage(e, "transparencia");
+                handleSetPage(e, "transparencia", "/transparencia");
               }}
               className={`${
                 page == "transparencia" ? "nav-select" : "nav-text"
@@ -97,9 +97,9 @@ const Navbar = () => {
           </li>
 
           <li>
-            <a 
+            <a
               onClick={(e) => {
-                handleSetPage(e, "contato");
+                handleSetPage(e, "contato", "/contato");
               }}
               className={`${page == "contato" ? "nav-select" : "nav-text"}`}
             >
