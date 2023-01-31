@@ -31,3 +31,18 @@
   flex-direction: column;
 }
 
+.nav-select{
+  color: var(--color-grey);
+}
+
+.nav-text{
+  color: var(--color-primary);
+}
+
+.selected {
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.selected:hover{
+  border-bottom: 2px solid var(--color-primary-hover);
+}

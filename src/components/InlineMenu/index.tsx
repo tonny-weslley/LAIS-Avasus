@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { setModuloSession } from "../../redux/ModulosSession/slice";
 
-import "./styles.css"
 import { RootState } from "../../redux/store";
 
 const InlineMenu = () => {

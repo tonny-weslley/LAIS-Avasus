@@ -41,11 +41,11 @@ const Home = () => {
         <InlineMenu />
 
         {selected === "populares" &&
-          cursosPopulares.map((curso) => <ModulosCard curso={curso} />)}
+          cursosPopulares.map((curso) => <ModulosCard key={curso} curso={curso} />)}
         {selected === "recentes" &&
-          cursosRecentes.map((curso) => <ModulosCard curso={curso} />)}
+          cursosRecentes.map((curso) => <ModulosCard key={curso} curso={curso} />)}
         {selected === "avaliados" &&
-          cursosMaisAvaliados.map((curso) => <ModulosCard curso={curso} />)}
+          cursosMaisAvaliados.map((curso) => <ModulosCard key={curso} curso={curso} />)}
 
         <ButtonVerMais>Ver mais</ButtonVerMais>
       </Modulos>

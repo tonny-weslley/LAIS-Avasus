@@ -7,13 +7,15 @@ export const NavbarDiv = styled.div`
   align-items: center;
   padding: 0 2rem;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   height: 4rem;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
+  -webkit-box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.75);
 `;
 
 export const NavbarLogo = styled.figure`
@@ -32,12 +34,12 @@ export const NavbarNav = styled.nav`
       margin-left: 1rem;
       a {
         text-decoration: none;
-        color: var(--color-primary);
         font-size: 0.9rem;
-        font-weight: 500;
+        font-weight: bold;
         transition: all 0.3s ease-in-out;
         &:hover {
           color: var(--color-primary-hover);
+          cursor: pointer;
         }
       }
     }
@@ -76,16 +78,13 @@ export const NavbarSearch = styled.div`
 `;
 
 export const NavbarInline = styled(NavbarNav)`
-
   margin-top: 2vh;
   display: flex;
   width: 100%;
   justify-content: start;
-
 `;
 
 export const NavbarInilineAction = styled.div`
-
   display: flex;
   padding: 0.5rem 1rem;
   width: fit-content;
@@ -93,8 +92,6 @@ export const NavbarInilineAction = styled.div`
     cursor: pointer;
     color: var(--color-primary-hover);
   }
-
-
 `;
 
 export const NavbarAuthButtons = styled.div`
