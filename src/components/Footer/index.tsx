@@ -3,7 +3,7 @@ import Ufrn from "../../assets/logos/ufrn.svg";
 
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
-import { TileAlternative } from "../styled-components/Texts";
+import { TitleAlternative } from "../styled-components/Texts";
 import {
   FooterSection,
   FooterImage,
@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <FooterSection>
       <RealizacaoSection>
-        <TileAlternative>Realização</TileAlternative>
+        <TitleAlternative>Realização</TitleAlternative>
         <RealizacaoSectionItem>
           <FooterImage>
             <img src={Lais} alt="" />
@@ -38,7 +38,7 @@ const Footer = () => {
           <p>Laboratório de Inovação Tecnológica em Saúde.</p>
         </LaisBrand>
         <FooterNav>
-          <TileAlternative>Links Úteis</TileAlternative>
+          <TitleAlternative>Links Úteis</TitleAlternative>
           <ul>
             <li>
               <a href="#">Início</a>
@@ -58,7 +58,7 @@ const Footer = () => {
           </ul>
         </FooterNav>
         <FooterSocial>
-          <TileAlternative>Redes Sociais</TileAlternative>
+          <TitleAlternative>Redes Sociais</TitleAlternative>
           <SocialIcons>
             <FaFacebookF />
             <FaTwitter />

@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+interface Props {
+  onPress: any;
+  src: any;
+  width: string;
+  height: string;
+}
+
+
 export const Section = styled.section`
   margin-top: 4rem;
   width: 100%;
@@ -181,4 +189,17 @@ export const CursosSection = styled.section`
 
 `;
 
+export const CursoTituloSection = styled.section<{ src: string }>`
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${({src}) => src});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
+
+`;

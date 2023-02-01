@@ -2,10 +2,27 @@ import styled from "styled-components";
 
 export const Title = styled.h1`
   color: var(--color-primary-hover);
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: bold;
   margin: auto;
   width: fit-content;
+`;
+
+export const Title2 = styled(Title)`
+  color: var(--color-primary);
+  margin: 0;
+  width: 100%;
+
+`;
+
+export const Title3 = styled(Title)`
+  color: var(--color-white);
+
+`;
+
+export const TitleAlternative = styled(Title)`
+  font-size: 1.3rem;
+  color: var(--color-white);
 `;
 
 export const Subtitle = styled.h2`
@@ -20,15 +37,19 @@ export const Subtitle = styled.h2`
   }
 `;
 
+export const AlternativeSubtitle = styled(Subtitle)`
+  font-size: 1.5rem;
+`;
+
+
 export const Text = styled.p`
   color: var(--color-primary);
   font-size: 1rem;
-  font-weight: 400;
   margin: auto;
   width: fit-content;
 `;
 
-export const TextVariant = styled.p`
+export const TextVariant = styled(Text)`
   color: var(--color-primary-hover);
   font-size: 0.8rem;
   font-weight: bold;
@@ -37,19 +58,13 @@ export const TextVariant = styled.p`
   }
 `;
 
-export const TextVariant2 = styled(Text)`
+export const TextVariant2 = styled(TextVariant)`
   color: var(--color-grey);
-  font-size: 0.8rem;
+  font-weight: normal;
 `;
 
-export const TileAlternative = styled(Title)`
-  font-size: 1.3rem;
-  color: var(--color-white);
-`;
 
-export const AlternativeSubtitle = styled(Subtitle)`
-  font-size: 1.5rem;
-`;
+
 
 export const LinkText = styled.a`
   color: var(--color-primary);

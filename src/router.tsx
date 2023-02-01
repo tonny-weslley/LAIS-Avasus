@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import SobreNos from './pages/SobreNos';
 import App from './pages';
 import Modulos from './pages/Modulos';
+import Curso from './pages/Curso';
 
 const Routes = () => {
     const router = createBrowserRouter([
@@ -16,6 +17,7 @@ const Routes = () => {
                 { path: '/sobre-nos', element: <SobreNos /> },
                 { path: '/cursos', element: <Modulos />},
                 { path: '/cursos/modulos', element: <Modulos /> },
+                { path: '/cursos/modulos/:id', element: <Curso /> }
             ]
         },
     ])

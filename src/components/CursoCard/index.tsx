@@ -14,9 +14,13 @@ import {
 } from "../styled-components/Texts";
 import Rating from "@mui/material/Rating";
 import { styled } from "@mui/material/styles";
+import { useNavigate } from "react-router";
 
 const CursoCard = (curso: any) => {
-  const { capa, titulo, matriculados, parceiros, duracao, avaliacao, resumo } =
+
+    const navigate = useNavigate();
+
+  const { id, capa, titulo, matriculados, parceiros, duracao, avaliacao, resumo } =
     curso.curso;
 
   const StyledRating = styled(Rating)({
@@ -46,7 +50,7 @@ const CursoCard = (curso: any) => {
 
       <Text>{resumo}</Text>
 
-      <LinkText>Ver Curso</LinkText>
+      <LinkText onClick={(e)=>{navigate(`/cursos/modulos/${id}`)}} >Ver Curso</LinkText>
     </CursoCardPainel>
   );
 };

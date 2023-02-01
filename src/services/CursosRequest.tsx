@@ -4,7 +4,7 @@ export async function getAll() {
   return http.get("/cursos");
 }
 
-export async function get(id: number) {
+export async function get(id: any) {
   return http.get(`/cursos/${id}`);
 }
 

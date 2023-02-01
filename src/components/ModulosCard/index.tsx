@@ -15,8 +15,13 @@ import { ButtonModulo } from "../styled-components/Buttons";
 import Rating from "@mui/material/Rating";
 import { styled } from "@mui/material/styles";
 
+import { useNavigate } from "react-router";
+
 const ModulosCard = (curso: any) => {
-  const { capa, titulo, matriculados, parceiros, duracao, avaliacao } =
+  
+  const navigate = useNavigate();
+
+  const { id, capa, titulo, matriculados, parceiros, duracao, avaliacao } =
     curso.curso;
 
   const StyledRating = styled(Rating)({
@@ -54,7 +59,7 @@ const ModulosCard = (curso: any) => {
         <p>{avaliacao.substring(0, avaliacao.length - 1)}</p>
       </CardRating>
 
-      <ButtonModulo>Ver Módulo</ButtonModulo>
+      <ButtonModulo onClick={(e)=>{navigate(`/cursos/modulos/${id}`)}} >Ver Módulo</ButtonModulo>
     </CursosCard>
   );
 };
