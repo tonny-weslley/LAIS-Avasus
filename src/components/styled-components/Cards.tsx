@@ -114,6 +114,23 @@ export const CursoCardPainel = styled.div`
   width: 30%;
 `;
 
+export const ParceirosCardPainel = styled.div`
+
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  img{
+    border-radius: 0.5rem;
+  }
+  hr{
+    margin: 1rem 0;
+    border: 2px solid var(--color-primary-light);
+    border-radius: 1rem;
+  }
+
+`;
+
 
 export const CardFigurePainel = styled.figure`
   display: flex;

@@ -254,3 +254,21 @@ export const CreditoDiv = styled.div`
   }
 
 `;
+
+export const ParceirosSection = styled.section`
+
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 5vh auto;
+  flex-wrap: wrap;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+  }
+
+
+`
