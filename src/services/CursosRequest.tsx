@@ -20,6 +20,6 @@ export async function getRecentes(limit: number) {
   return http.get(`/cursos?_sort=criado_em&_order=desc&_limit=${limit}`);
 }
 
-export async function getByCategory(category: string, limit: number) {
-  return http.get(`/cursos?cateroria=${category}&_sort=nome&_order=asc&_limit=${limit}`);
+export async function getByCategory(category: string, limit: number, page:number) {
+  return http.get(`/cursos?cateroria=${category}&_sort=nome&_order=asc&_limit=${limit}&_page=${page}`);
 }

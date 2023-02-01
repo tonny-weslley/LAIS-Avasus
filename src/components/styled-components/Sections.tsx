@@ -162,3 +162,21 @@ export const SocialIcons = styled.div`
     color: var(--color-white);
   }
 `;
+
+
+export const CursosSection = styled.section`
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 5vh auto;
+  flex-wrap: wrap;
+  @media (min-width: 768px) {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+`;

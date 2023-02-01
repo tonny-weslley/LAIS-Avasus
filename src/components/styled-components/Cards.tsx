@@ -113,3 +113,17 @@ export const CardRating = styled.div`
         margin: 0;
     }
 `;
+
+export const CursoCardPainel = styled.div`
+
+  background-color: var(--color-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+`;

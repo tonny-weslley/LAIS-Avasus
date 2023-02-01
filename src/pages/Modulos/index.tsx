@@ -5,32 +5,25 @@ import { Title } from "../../components/styled-components/Texts";
 import { getByCategory } from "../../services/CursosRequest";
 import { useEffect, useState } from "react";
 import InlineModuloMenu from "../../components/InlineModuloMenu";
+import CursosShow from "../../components/CursosShow";
+
+import { useDispatch,useSelector } from "react-redux";
+import { RootState } from "../../redux/store";
+
 
 const Modulos = () => {
     const categorias = ['Especialização', 'Módulo de extensão', 'Síflis e outras ist', 'Covid 19', 'Preceptoria', 'Doenças raras', 'WebPalestras', 'Acessibilidade', 'Sistema prisional', 'OPAS'];
-    const [categoria, setCategoria] = useState(categorias[0]);
+    const categoria = useSelector((state: RootState) => state.modulosCategoria.selected);
     const [cursos, setCursos] = useState([]);
-    const [pagination, setPagination] = useState({ page: 1, limit: 10, total: 0 });
+    const page = useSelector((state: RootState) => state.modulosCategoria.page);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        getByCategory(categoria, 6).then((response) => {
+        getByCategory(categoria, 6, 1).then((response) => {
             setCursos(response.data);
             setLoading(false);
         });
     }, [categoria]);
-
-    const handlePagination = (page: number) => {
-        setPagination({ ...pagination, page });
-    };
-
-    const handleLimit = (limit: number) => {
-        setPagination({ ...pagination, limit });
-    };
-
-    const handleCategory = (category: string) => {
-        setCategoria(category);
-    };
 
 
   return (
@@ -42,6 +35,7 @@ const Modulos = () => {
 
         <InlineModuloMenu menu={categorias} />
 
+        <CursosShow cursos={cursos}/>
 
       </ModulosSection>
     </Section>

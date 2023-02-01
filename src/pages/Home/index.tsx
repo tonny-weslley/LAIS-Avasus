@@ -8,6 +8,7 @@ import { ButtonVerMais } from "../../components/styled-components/Buttons";
 
 import { useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const { selected } = useSelector((state: RootState) => state.modulosSession);
@@ -15,6 +16,8 @@ const Home = () => {
   const [cursosPopulares, setCursosPopulares] = useState([]);
   const [cursosRecentes, setCursosRecentes] = useState([]);
   const [cursosMaisAvaliados, setcursosMaisAvaliados] = useState([]);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     getFeatured(3).then((response) => {
@@ -29,8 +32,11 @@ const Home = () => {
       setCursosRecentes(response.data);
     });
 
-
   }, []);
+
+  const redirectModulos = () => {
+    navigate("/cursos/modulos");
+  };
 
   return (
     <Section>
@@ -45,7 +51,7 @@ const Home = () => {
         {selected === "avaliados" &&
           cursosMaisAvaliados.map((curso) => <ModulosCard key={curso} curso={curso} />)}
 
-        <ButtonVerMais>Ver mais</ButtonVerMais>
+        <ButtonVerMais onClick={redirectModulos} >Ver mais</ButtonVerMais>
       </Modulos>
     </Section>
   );
