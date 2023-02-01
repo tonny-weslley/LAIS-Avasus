@@ -29,14 +29,6 @@ export const CardFigure = styled.figure`
     object-fit: cover;
     border-radius: 0.5rem;
   }
-
-  @media (min-width: 768px) {
-    img {
-      width: 6rem;
-      height: 6rem;
-      border-radius: 1rem;
-    }
-  }
 `;
 
 export const CardStatus = styled.div`
@@ -116,14 +108,28 @@ export const CardRating = styled.div`
 
 export const CursoCardPainel = styled.div`
 
-  background-color: var(--color-bg);
-  padding: 2rem;
-  border-radius: 1rem;
-  margin: 1rem 0;
+  margin: 1rem auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  width: 30%;
+`;
+
+
+export const CardFigurePainel = styled.figure`
+  display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  img {
+    width: 80%;
+    height: 80%;
+  }
 
+`
+
+export const CardStatusItemPainel = styled.div`
+
+  display: flex;
+  flex-direction: row;
 
 `;

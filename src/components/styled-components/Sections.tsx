@@ -167,16 +167,18 @@ export const SocialIcons = styled.div`
 export const CursosSection = styled.section`
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   margin: 5vh auto;
   flex-wrap: wrap;
   @media (min-width: 768px) {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: start;
     align-items: start;
   }
 
 `;
+
+

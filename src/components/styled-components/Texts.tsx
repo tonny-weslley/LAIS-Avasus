@@ -38,15 +38,27 @@ export const TextVariant = styled.p`
 `;
 
 export const TextVariant2 = styled(Text)`
-
   color: var(--color-grey);
   font-size: 0.8rem;
-
 `;
 
 export const TileAlternative = styled(Title)`
-
   font-size: 1.3rem;
   color: var(--color-white);
+`;
 
+export const AlternativeSubtitle = styled(Subtitle)`
+  font-size: 1.5rem;
+`;
+
+export const LinkText = styled.a`
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    color: var(--color-primary-hover);
+    text-decoration: underline;
+    cursor: pointer;
+  }
 `;
