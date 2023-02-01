@@ -47,3 +47,8 @@
 .selected:hover{
   border-bottom: 2px solid var(--color-primary-hover);
 }
+
+.selected-categoria{
+  border-bottom: 2px solid var(--color-grey);
+  color: var(--color-grey);
+}

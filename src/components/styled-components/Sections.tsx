@@ -225,13 +225,13 @@ export const InlineDivItem = styled.div`
 
 export const DescricaoDiv = styled.div`
 
-  margin: 3vh auto;
+  margin: 3vh 0;
 
 `;
 
 export const ObjetivoDiv = styled.div`
 
-  margin: 3vh auto;
+  margin: 3vh 0;
 `;
 
 export const CreditoDiv = styled.div`
@@ -261,14 +261,23 @@ display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%;
-  margin: 5vh auto;
+  width: 100%;
+  margin: 5vh 0;
   flex-wrap: wrap;
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: start;
     align-items: start;
   }
+`;
 
 
-`
+export const PaginationSection = styled.section`
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+
+`;

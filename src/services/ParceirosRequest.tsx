@@ -9,5 +9,5 @@ export async function get(id: any) {
 }
 
 export async function getSome(limit: number, page: number) {
-    return http.get(`/cursos?_sort=titulo&_order=asc&_limit=${limit}&_page=${page}`);
+    return http.get(`/parceiros?_limit=${limit}&_page=${page}`);
 }

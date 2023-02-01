@@ -8,6 +8,12 @@ export const Title = styled.h1`
   width: fit-content;
 `;
 
+export const TitleStart = styled(Title)`
+
+  margin: 0;
+
+`;
+
 export const Title2 = styled(Title)`
   color: var(--color-primary);
   margin: 0;

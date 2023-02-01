@@ -87,8 +87,14 @@ const Curso = () => {
           )}
         </ObjetivoDiv>
 
-        <TitleAlternative2>Recursos educacionais</TitleAlternative2>
+
+        {curso.recursos_educacionais && (
+          <>
+            <TitleAlternative2>Recursos educacionais</TitleAlternative2>
             <DescricaoDiv>{curso.recursos_educacionais}</DescricaoDiv>
+          </>
+        )}
+        
 
         <TitleAlternative2>Créditos</TitleAlternative2>
 

@@ -116,16 +116,19 @@ export const CursoCardPainel = styled.div`
 
 export const ParceirosCardPainel = styled.div`
 
-  margin: 1rem auto;
+  margin: 3rem auto;
   display: flex;
   flex-direction: column;
   width: 30%;
+  height: 40vh
+  justify-content: space-between; 
   img{
-    border-radius: 0.5rem;
+    height: 15vh;
+    border-radius: 0.2rem;
   }
   hr{
     margin: 1rem 0;
-    border: 2px solid var(--color-primary-light);
+    border: 1px solid var(--color-primary-light);
     border-radius: 1rem;
   }
 

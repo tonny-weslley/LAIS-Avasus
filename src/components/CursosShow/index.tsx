@@ -9,6 +9,7 @@ const CursosShow = (cursos:any) => {
                 <CursoCard key={curso} curso={curso} />
             ))}
         </CursosSection>
+       
     )
 
 }
