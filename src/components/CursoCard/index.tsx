@@ -11,6 +11,8 @@ import {
   TextVariant,
   Text,
   LinkText,
+  TextVariant3,
+  TextEnd
 } from "../styled-components/Texts";
 import Rating from "@mui/material/Rating";
 import { styled } from "@mui/material/styles";
@@ -37,7 +39,7 @@ const CursoCard = (curso: any) => {
 
       <Title2>{titulo}</Title2>
 
-      <TextVariant>{parceiros}</TextVariant>
+      <TextVariant3>{parceiros}</TextVariant3>
 
       <CardStatusItemPainel>
         <img src={Matriculados} alt="" />

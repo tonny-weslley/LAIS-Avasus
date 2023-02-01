@@ -154,6 +154,9 @@ export const CardStatusItemPainel = styled.div`
 
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
 
 `;
 
