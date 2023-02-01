@@ -17,6 +17,7 @@ export const Title2 = styled(Title)`
 
 export const Title3 = styled(Title)`
   color: var(--color-white);
+  margin: 0;
 
 `;
 
@@ -38,7 +39,11 @@ export const Subtitle = styled.h2`
 `;
 
 export const AlternativeSubtitle = styled(Subtitle)`
-  font-size: 1.5rem;
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 1.5vh 0;
+
 `;
 
 

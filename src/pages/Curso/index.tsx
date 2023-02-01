@@ -1,6 +1,6 @@
 import { useParams } from "react-router";
-import { Title2, AlternativeSubtitle } from "../../components/styled-components/Texts";
-import { Section, CursoTituloSection } from "../../components/styled-components/Sections"; 
+import { Title3, AlternativeSubtitle } from "../../components/styled-components/Texts";
+import { Section, CursoTituloSection, HeaderCurso } from "../../components/styled-components/Sections"; 
 import { get } from "../../services/CursosRequest";
 import { useEffect, useState } from "react";
 
@@ -32,8 +32,10 @@ const Curso = () => {
 
         <Section>
             <CursoTituloSection src={curso.capa}>
-            <Title2>{curso.titulo}</Title2>
-            <AlternativeSubtitle> {curso.parceiros} </AlternativeSubtitle>
+                <HeaderCurso>
+                    <Title3>{curso.titulo}</Title3>
+                    <AlternativeSubtitle> {curso.parceiros} </AlternativeSubtitle>
+                </HeaderCurso>
             </CursoTituloSection>
         </Section>
     );

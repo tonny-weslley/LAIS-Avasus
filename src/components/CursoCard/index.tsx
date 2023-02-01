@@ -7,7 +7,7 @@ import {
   CardStatusItemPainel,
 } from "../styled-components/Cards";
 import {
-  AlternativeSubtitle,
+  Title2,
   TextVariant,
   Text,
   LinkText,
@@ -35,7 +35,7 @@ const CursoCard = (curso: any) => {
         <img src={capa} alt="" />
       </CardFigure>
 
-      <AlternativeSubtitle>{titulo}</AlternativeSubtitle>
+      <Title2>{titulo}</Title2>
 
       <TextVariant>{parceiros}</TextVariant>
 

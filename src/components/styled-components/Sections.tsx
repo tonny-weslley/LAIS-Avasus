@@ -190,16 +190,21 @@ export const CursosSection = styled.section`
 `;
 
 export const CursoTituloSection = styled.section<{ src: string }>`
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${({src}) => src});
+  background-image: linear-gradient(#000000b7, #000000b7), url(${({src}) => src});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 25vh;
+  height: 20vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+`;
 
+export const HeaderCurso = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: fit-content;
 
 `;
