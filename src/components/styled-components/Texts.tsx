@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Title = styled.h1`
   color: var(--color-primary-hover);
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: bold;
   margin: auto;
   width: fit-content;
@@ -12,6 +12,7 @@ export const Title2 = styled(Title)`
   color: var(--color-primary);
   margin: 0;
   width: 100%;
+  font-weight: normal;
 
 `;
 
