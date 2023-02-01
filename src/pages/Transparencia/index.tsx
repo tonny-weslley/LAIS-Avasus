@@ -4,6 +4,9 @@ import { Title } from "../../components/styled-components/Texts";
 import DadosGerais from "../../components/DadosGerais";
 import {getAll} from "../../services/TransparenciaRequest";
 import { useEffect, useState } from "react";
+import Piechart from "../../components/Piechart";
+
+
 
 const Transparencia = () => {
 
@@ -38,6 +41,8 @@ const Transparencia = () => {
         <Title> Transparência </Title>
 
         <DadosGerais dados={dados.dados_gerais}/>
+
+        <Piechart/>
 
       </ModulosSection>
     
