@@ -75,6 +75,12 @@ export const Text2 = styled(Text)`
   margin-top: 1rem;
 `;
 
+export const Text3 = styled(Text)`
+  font-size: 0.9rem;
+  font-weight: bold;
+
+`;
+
 export const TextVariant = styled(Text)`
   color: var(--color-primary-hover);
   font-size: 0.8rem;

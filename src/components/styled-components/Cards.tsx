@@ -156,3 +156,61 @@ export const CardStatusItemPainel = styled.div`
   flex-direction: row;
 
 `;
+
+export const TransparenciaCard = styled.div`
+
+  background-color: var(--color-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 3vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+
+
+`;
+
+export const TransparenciaCardHeader = styled.div`
+
+
+`;
+
+export const DadosGeraisCardItems = styled.div`
+
+  margin: 1vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+
+
+`;
+
+export const DadosGeraisCardItem = styled.div`
+  margin: 2vh auto;
+  width: 12vw;
+  img{
+    margin: 0 1vw;
+  }
+
+`
+export const DadosGeraisCardItemHeader = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+`;
+
+export const DadosGeraisCardItemBody = styled.div`
+
+`;
