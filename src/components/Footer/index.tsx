@@ -17,7 +17,22 @@ import {
   SocialIcons,
 } from "../styled-components/Sections";
 
+import { setPage } from "../../redux/Navbar/slice";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+
+
 const Footer = () => {
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleSetPage = (event: any, page: string, redirect:string) => {
+    event.preventDefault();
+    dispatch(setPage(page));
+    navigate(redirect);
+  };
+
   return (
     <FooterSection>
       <RealizacaoSection>
@@ -41,19 +56,19 @@ const Footer = () => {
           <TitleAlternative>Links Úteis</TitleAlternative>
           <ul>
             <li>
-              <a href="#">Início</a>
+              <a onClick={(e)=> {handleSetPage(e, '/', '/')}}>Início</a>
             </li>
             <li>
-              <a href="#">Sobre Nós</a>
+              <a onClick={(e)=> {handleSetPage(e, 'sobre-nos', '/sobre-nos')}}>Sobre Nós</a>
             </li>
             <li>
-              <a href="#">Módulos</a>
+              <a onClick={(e)=> { handleSetPage(e, "cursos", "/cursos/modulos")}}>Módulos</a>
             </li>
             <li>
-              <a href="#">Parceiros</a>
+              <a onClick={(e) => {handleSetPage(e, "parceiros", "/parceiros")}}>Parceiros</a>
             </li>
             <li>
-              <a href="#">Transparència</a>
+              <a onClick={(e) => {handleSetPage(e, "transparencia", "/transparencia")}}>Transparència</a>
             </li>
           </ul>
         </FooterNav>
