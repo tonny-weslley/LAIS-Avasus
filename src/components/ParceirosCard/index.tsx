@@ -8,7 +8,9 @@ const ParceirosCard = (parceiro:any) =>{
 
     return(
         <ParceirosCardPainel>
-            <img src={parceiro.parceiro.capa} alt={parceiro.parceiro.titulo} />
+            <figure>
+             <img src={parceiro.parceiro.capa} alt={parceiro.parceiro.titulo} />
+            </figure>
             <hr/>
             <Title2>{parceiro.parceiro.titulo}</Title2>
         </ParceirosCardPainel>

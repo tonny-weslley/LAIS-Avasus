@@ -39,7 +39,7 @@ const Parceiros = () => {
       setParceiros(response.data);
       setQPage(Math.ceil(response.headers["x-total-count"] / limit));
     });
-  }, []);
+  }, [page]);
 
   const handleChange = (event: React.ChangeEvent<unknown>, page: number) => {
     dispatch(setPage(page));

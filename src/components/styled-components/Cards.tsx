@@ -122,9 +122,12 @@ export const ParceirosCardPainel = styled.div`
   width: 30%;
   height: 40vh
   justify-content: space-between; 
-  img{
-    height: 15vh;
-    border-radius: 0.2rem;
+  figure{
+    img{
+      height: 15vh;
+      width: 100%;
+      border-radius: 0.2rem;
+    }
   }
   hr{
     margin: 1rem 0;
