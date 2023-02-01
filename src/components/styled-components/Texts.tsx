@@ -26,6 +26,11 @@ export const TitleAlternative = styled(Title)`
   color: var(--color-white);
 `;
 
+export const TitleAlternative2 = styled(Title)`
+  font-size: 1.4rem;
+`;
+
+
 export const Subtitle = styled.h2`
   margin: 1rem auto;
   color: var(--color-primary);
@@ -46,12 +51,21 @@ export const AlternativeSubtitle = styled(Subtitle)`
 
 `;
 
+export const AlternativeSubtitle2 = styled(AlternativeSubtitle)`
+  color: var(--color-primary);
+  font-weight: bold;
+`;
+
 
 export const Text = styled.p`
   color: var(--color-primary);
   font-size: 1rem;
   margin: auto;
   width: fit-content;
+`;
+
+export const Text2 = styled(Text)`
+  margin-top: 1rem;
 `;
 
 export const TextVariant = styled(Text)`
@@ -66,6 +80,11 @@ export const TextVariant = styled(Text)`
 export const TextVariant2 = styled(TextVariant)`
   color: var(--color-grey);
   font-weight: normal;
+`;
+
+export const TextMargin = styled(Text)`
+  margin: 0 1vh;
+  font-weight: bold;
 `;
 
 

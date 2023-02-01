@@ -11,7 +11,6 @@ const App = () => {
       <Navbar />
       <NavDrawer />
       <Outlet />
-      <Parceiros />
       <Footer />
     </div>
   );

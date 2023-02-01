@@ -1,12 +1,5 @@
 import styled from "styled-components";
 
-interface Props {
-  onPress: any;
-  src: any;
-  width: string;
-  height: string;
-}
-
 
 export const Section = styled.section`
   margin-top: 4rem;
@@ -197,6 +190,7 @@ export const CursoTituloSection = styled.section<{ src: string }>`
   width: 100%;
   height: 20vh;
   display: flex;
+  margin: 0 auto 2vh auto;
   flex-direction: column;
   justify-content: center;
 `;
@@ -206,5 +200,57 @@ export const HeaderCurso = styled.div`
   flex-direction: column;
   margin: 0 auto;
   width: fit-content;
+
+`;
+
+export const InlineDiv = styled.div`
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4vh auto;
+  width: 100%;
+
+`;
+
+export const InlineDivItem = styled.div`
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+`;
+
+export const DescricaoDiv = styled.div`
+
+  margin: 3vh auto;
+
+`;
+
+export const ObjetivoDiv = styled.div`
+
+  margin: 3vh auto;
+`;
+
+export const CreditoDiv = styled.div`
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3vh auto;
+  width: 100%;
+  flex-wrap: wrap;
+  img{
+    width: 10vw;
+  }
+  svg{
+    width: 40%;
+  }
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 
 `;

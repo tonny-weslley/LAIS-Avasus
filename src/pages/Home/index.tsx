@@ -9,6 +9,7 @@ import { ButtonVerMais } from "../../components/styled-components/Buttons";
 import { useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
 import { useNavigate } from "react-router-dom";
+import Parceiros from "../../components/Parceiros";
 
 const Home = () => {
   const { selected } = useSelector((state: RootState) => state.modulosSession);
@@ -53,6 +54,7 @@ const Home = () => {
 
         <ButtonVerMais onClick={redirectModulos} >Ver mais</ButtonVerMais>
       </Modulos>
+      <Parceiros />
     </Section>
   );
 };
