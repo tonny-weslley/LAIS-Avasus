@@ -173,7 +173,7 @@ export const CardStatusItemPainel = styled.div`
 export const TransparenciaCard = styled.div`
 
   background-color: var(--color-bg);
-  padding: 2rem;
+  padding: 0.5rem;
   border-radius: 1rem;
   margin: 3vh 0;
   display: flex;

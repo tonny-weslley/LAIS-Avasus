@@ -34,7 +34,7 @@ const Transparencia = () => {
     return(
 
         <Section>
-      <ModulosSection>
+        <ModulosSection>
         
         <BreadCrumbs />
 
