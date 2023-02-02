@@ -1,13 +1,13 @@
-import { Section } from "../../components/styled-components/Sections";
+import { Section, PaginationInline } from "../../components/styled-components/Sections";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import { ModulosSection, PaginationSection } from "../../components/styled-components/Sections";
-import { Title } from "../../components/styled-components/Texts";
+import { TextVariant, Title } from "../../components/styled-components/Texts";
 import { getByCategory } from "../../services/CursosRequest";
 import { useEffect, useState } from "react";
 import InlineModuloMenu from "../../components/InlineModuloMenu";
 import CursosShow from "../../components/CursosShow";
 import InlineModuloCategoria from "../../components/InlineModuloCategoria";
-
+import {NavigationButton} from "../../components/styled-components/Buttons";
 import { setPage } from "../../redux/ModulosCategoria/slice";
 
 import { useDispatch,useSelector } from "react-redux";
@@ -38,6 +38,12 @@ const Modulos = () => {
         dispatch(setPage(page));
     };
 
+    const handleNextPage = (event: any) => {
+        dispatch(setPage(page + 1));
+    };
+    const handlePreviousPage = (event: any) => {
+        dispatch(setPage(page - 1));
+    };
 
   return (
     <Section>
@@ -52,8 +58,14 @@ const Modulos = () => {
         <CursosShow cursos={cursos}/>
 
         <PaginationSection>
-          <Pagination showFirstButton showLastButton page={page} onChange={handleChange}  count={qPage} shape="rounded" />
+          <Pagination page={page} onChange={handleChange}  count={qPage} shape="rounded"/>
         </PaginationSection>
+
+        <PaginationInline>
+          <NavigationButton onClick={(e)=>{handlePreviousPage(e)}} disabled={page == 1} >Voltar</NavigationButton>
+          <TextVariant>{page}</TextVariant>
+          <NavigationButton onClick={(e)=>{handleNextPage(e)}} disabled={page == qPage} >Proximo</NavigationButton>
+        </PaginationInline>
 
       </ModulosSection>
     </Section>

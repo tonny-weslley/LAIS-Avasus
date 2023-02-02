@@ -111,7 +111,10 @@ export const CursoCardPainel = styled.div`
   margin: 1rem auto;
   display: flex;
   flex-direction: column; 
-  width: 30%;
+  width: 100%;
+  @media (min-width: 1400px) {
+    width: 30%;
+  }
 `;
 
 export const ParceirosCardPainel = styled.div`

@@ -89,3 +89,20 @@ export const ButtonVerMais = styled(Button)`
     border-radius: 15px;
     padding: 1vh 8vw;
 `;
+
+
+export const NavigationButton = styled.button`
+    background-color: var(--color-white);
+    color: var(--color-grey);
+    border: 1px solid var(--color-grey);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    margin: 0 1vw;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: var(--color-primary-hover);
+        color: var(--color-white);
+    }
+`;

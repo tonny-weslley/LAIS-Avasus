@@ -170,7 +170,7 @@ export const CursosSection = styled.section`
   width: 100%;
   margin: 5vh auto;
   flex-wrap: wrap;
-  @media (min-width: 768px) {
+  @media (min-width: 1400px) {
     flex-direction: row;
     justify-content: start;
     align-items: start;
@@ -256,11 +256,18 @@ export const ParceirosSection = styled.section`
 `;
 
 export const PaginationSection = styled.section`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  margin: 0 auto;
+  
+  display: none;
+
+  @media (min-width: 768px) {
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+  
+  }
 `;
 
 export const FakeCarouselDiv = styled.div<{ src: string }>`
@@ -280,4 +287,20 @@ export const FakeCarouselDiv = styled.div<{ src: string }>`
     margin: 0 auto;
     flex-wrap: wrap;
   }
+`;
+
+
+export const PaginationInline = styled.div`
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2vw;
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+
 `;
