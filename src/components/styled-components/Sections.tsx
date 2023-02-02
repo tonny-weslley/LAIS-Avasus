@@ -248,7 +248,7 @@ export const ParceirosSection = styled.section`
   width: 100%;
   margin: 5vh 0;
   flex-wrap: wrap;
-  @media (min-width: 768px) {
+  @media (min-width: 1400px) {
     flex-direction: row;
     justify-content: start;
     align-items: start;

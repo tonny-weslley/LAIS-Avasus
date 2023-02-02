@@ -119,12 +119,12 @@ export const ParceirosCardPainel = styled.div`
   margin: 3rem auto;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 80%;
   height: 40vh
   justify-content: space-between; 
   figure{
     img{
-      height: 15vh;
+      
       width: 100%;
       border-radius: 0.2rem;
     }
@@ -133,6 +133,13 @@ export const ParceirosCardPainel = styled.div`
     margin: 1rem 0;
     border: 1px solid var(--color-primary-light);
     border-radius: 1rem;
+  }
+
+  @media (min-width: 1400px) {
+    width: 30%;
+    img{
+      height: 15vh;
+    }
   }
 
 `;
