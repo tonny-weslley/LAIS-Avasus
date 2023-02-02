@@ -6,12 +6,17 @@ import { Title } from "../../components/styled-components/Texts";
 import InlineMenu from "../../components/InlineMenu";
 import { ButtonVerMais } from "../../components/styled-components/Buttons";
 
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../../redux/store";
 import { useNavigate } from "react-router-dom";
 import Parceiros from "../../components/Parceiros";
+import InlineDropdownMenuInicio from "../../components/InlineDropdownMenuInicio";
+import FakeCarousel from "../../components/FakeCarousel";
+import { setPage } from "../../redux/Navbar/slice";
 
 const Home = () => {
+  const dispatch = useDispatch();
+
   const { selected } = useSelector((state: RootState) => state.modulosSession);
 
   const [cursosPopulares, setCursosPopulares] = useState([]);
@@ -36,14 +41,20 @@ const Home = () => {
   }, []);
 
   const redirectModulos = () => {
+    dispatch(setPage('cursos'));
     navigate("/cursos/modulos");
   };
 
   return (
     <Section>
+        <FakeCarousel/>
       <Modulos>
+
+
         <Title>Módulos Educacionais</Title>
         <InlineMenu />
+
+        <InlineDropdownMenuInicio/>
 
         {selected === "populares" &&
           cursosPopulares.map((curso:any) => <ModulosCard key={curso} curso={curso} />)}

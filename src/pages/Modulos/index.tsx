@@ -6,6 +6,7 @@ import { getByCategory } from "../../services/CursosRequest";
 import { useEffect, useState } from "react";
 import InlineModuloMenu from "../../components/InlineModuloMenu";
 import CursosShow from "../../components/CursosShow";
+import InlineModuloCategoria from "../../components/InlineModuloCategoria";
 
 import { setPage } from "../../redux/ModulosCategoria/slice";
 
@@ -46,6 +47,7 @@ const Modulos = () => {
         <Title>Módulos Educacionais</Title>
 
         <InlineModuloMenu menu={categorias} />
+        <InlineModuloCategoria menu={categorias}/>
 
         <CursosShow cursos={cursos}/>
 

@@ -1,4 +1,4 @@
-import { NavbarInline, NavbarInilineAction } from "../styled-components/Navbar";
+import { NavbarInlineInicio, NavbarInlineActionInicio } from "../styled-components/Navbar";
 
 import { useDispatch, useSelector } from "react-redux";
 
@@ -17,11 +17,11 @@ const InlineMenu = () => {
 
     return(
 
-        <NavbarInline>
-            <NavbarInilineAction className={`${selected == 'populares' ? 'selected' : ''}`} onClick={(e) => {handleModuloSession(e, "populares")}}>Mais populares</NavbarInilineAction>
-            <NavbarInilineAction className={`${selected == 'avaliados' ? 'selected' : ''}`} onClick={(e) => {handleModuloSession(e, "avaliados")}}>Mais bem avaliados</NavbarInilineAction>
-            <NavbarInilineAction className={`${selected == 'recentes' ? 'selected' : ''}`} onClick={(e) => {handleModuloSession(e, "recentes")}}>Mais recentes</NavbarInilineAction>
-        </NavbarInline>
+        <NavbarInlineInicio>
+            <NavbarInlineActionInicio className={`${selected == 'populares' ? 'selected' : ''}`} onClick={(e) => {handleModuloSession(e, "populares")}}>Mais populares</NavbarInlineActionInicio>
+            <NavbarInlineActionInicio className={`${selected == 'avaliados' ? 'selected' : ''}`} onClick={(e) => {handleModuloSession(e, "avaliados")}}>Mais bem avaliados</NavbarInlineActionInicio>
+            <NavbarInlineActionInicio className={`${selected == 'recentes' ? 'selected' : ''}`} onClick={(e) => {handleModuloSession(e, "recentes")}}>Mais recentes</NavbarInlineActionInicio>
+        </NavbarInlineInicio>
 
     )
 

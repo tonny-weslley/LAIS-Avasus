@@ -217,3 +217,25 @@ export const DadosGeraisCardItemHeader = styled.div`
 export const DadosGeraisCardItemBody = styled.div`
 
 `;
+
+export const InlineMenuInicio = styled.div`
+
+  display: flex;
+  width: 100%;
+  margin: 2vh 0;
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+`;
+
+export const InlineMenuModulo = styled(InlineMenuInicio)`
+
+  display: flex;
+  width: 100%;
+  margin: 2vh 0;
+  @media (min-width: 1400px) {
+    display: none;
+  }
+
+`;

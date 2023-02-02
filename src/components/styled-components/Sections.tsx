@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
-
 export const Section = styled.section`
-  margin-top: 4rem;
+  margin-top: 3rem;
   width: 100%;
 `;
 
@@ -18,7 +17,6 @@ export const Modulos = styled.section`
 export const ModulosSection = styled(Modulos)`
   justify-content: start;
   align-items: start;
-
 `;
 
 export const CenterSection = styled.section`
@@ -164,9 +162,7 @@ export const SocialIcons = styled.div`
   }
 `;
 
-
 export const CursosSection = styled.section`
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -179,11 +175,11 @@ export const CursosSection = styled.section`
     justify-content: start;
     align-items: start;
   }
-
 `;
 
 export const CursoTituloSection = styled.section<{ src: string }>`
-  background-image: linear-gradient(#000000b7, #000000b7), url(${({src}) => src});
+  background-image: linear-gradient(#000000b7, #000000b7),
+    url(${({ src }) => src});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -200,42 +196,32 @@ export const HeaderCurso = styled.div`
   flex-direction: column;
   margin: 0 auto;
   width: fit-content;
-
 `;
 
 export const InlineDiv = styled.div`
-
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin: 4vh auto;
   width: 100%;
-
 `;
 
 export const InlineDivItem = styled.div`
-
   display: flex;
   flex-direction: row;
   align-items: center;
-
-
 `;
 
 export const DescricaoDiv = styled.div`
-
   margin: 3vh 0;
-
 `;
 
 export const ObjetivoDiv = styled.div`
-
   margin: 3vh 0;
 `;
 
 export const CreditoDiv = styled.div`
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -243,21 +229,19 @@ export const CreditoDiv = styled.div`
   margin: 3vh auto;
   width: 100%;
   flex-wrap: wrap;
-  img{
+  img {
     width: 10vw;
   }
-  svg{
+  svg {
     width: 40%;
   }
   @media (min-width: 768px) {
     flex-direction: row;
   }
-
 `;
 
 export const ParceirosSection = styled.section`
-
-display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -271,13 +255,29 @@ display: flex;
   }
 `;
 
-
 export const PaginationSection = styled.section`
-
   display: flex;
   align-items: center;
   justify-content: center;
   width: fit-content;
   margin: 0 auto;
+`;
 
+export const FakeCarouselDiv = styled.div<{ src: string }>`
+  display: none;
+  background-image: linear-gradient(#ececec75, #ececec75),
+    url(${({ src }) => src});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
 `;

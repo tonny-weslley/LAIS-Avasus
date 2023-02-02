@@ -78,20 +78,48 @@ export const NavbarSearch = styled.div`
 `;
 
 export const NavbarInline = styled(NavbarNav)`
-  margin-top: 2vh;
+  
+  display: none;
+  @media (min-width: 1400px) {
+  
+  margin: 2vh auto 0 auto;
   display: flex;
   width: 100%;
   justify-content: start;
+
+  }
+
+`;
+
+export const NavbarInlineInicio = styled.nav`
+
+  display: none;
+  
+  @media (min-width: 768px) {
+    margin: 2vh auto 0 auto;
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    
+  }
 `;
 
 export const NavbarInilineAction = styled.div`
   display: flex;
   padding: 0.5rem 1rem;
+  font-size: 0.8rem;
   width: fit-content;
   &:hover {
     cursor: pointer;
     color: var(--color-primary-hover);
   }
+`;
+
+export const NavbarInlineActionInicio = styled(NavbarInilineAction)`
+
+  font-size: 1rem;
+
+
 `;
 
 export const NavbarAuthButtons = styled.div`
@@ -160,5 +188,4 @@ export const NavBreadcrumb = styled.div`
       font-weight: bold;
     }
   }
-
 `;

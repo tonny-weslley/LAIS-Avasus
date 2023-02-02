@@ -68,7 +68,7 @@ const Footer = () => {
               <a onClick={(e) => {handleSetPage(e, "parceiros", "/parceiros")}}>Parceiros</a>
             </li>
             <li>
-              <a onClick={(e) => {handleSetPage(e, "transparencia", "/transparencia")}}>Transparència</a>
+              <a onClick={(e) => {handleSetPage(e, "transparencia", "/transparencia")}}>Transparência</a>
             </li>
           </ul>
         </FooterNav>
