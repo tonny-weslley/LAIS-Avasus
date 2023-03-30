@@ -82,20 +82,6 @@ const Navbar = () => {
               Parceiros
             </a>
           </li>
-
-          <li>
-            <a
-              onClick={(e) => {
-                handleSetPage(e, "transparencia", "/transparencia");
-              }}
-              className={`${
-                page == "transparencia" ? "nav-select" : "nav-text"
-              }`}
-            >
-              Transparência
-            </a>
-          </li>
-
           <li>
             <a
               onClick={(e) => {

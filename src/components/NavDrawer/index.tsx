@@ -84,19 +84,6 @@ const NavDrawer = () => {
             <li>
               <a
                 onClick={(e) => {
-                  handleSetPage(e, "transparencia", "/transparencia");
-                }}
-                className={`${
-                  page == "transparencia" ? "nav-select" : "nav-text"
-                }`}
-              >
-                Transparência
-              </a>
-            </li>
-
-            <li>
-              <a
-                onClick={(e) => {
                   handleSetPage(e, "contato", "/contato");
                 }}
                 className={`${page == "contato" ? "nav-select" : "nav-text"}`}
