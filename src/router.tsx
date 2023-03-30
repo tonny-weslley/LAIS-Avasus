@@ -7,7 +7,6 @@ import App from './pages';
 import Modulos from './pages/Modulos';
 import Curso from './pages/Curso';
 import Parceiros from './pages/Parceiros';
-import Transparencia from './pages/Transparencia'
 
 const Routes = () => {
     const router = createBrowserRouter([
@@ -17,7 +16,6 @@ const Routes = () => {
             children: [
                 { path: '/', element: <Home /> },
                 { path: '/sobre-nos', element: <SobreNos /> },
-                { path: '/transparencia', element: <Transparencia />},
                 { path: '/parceiros', element: <Parceiros />},
                 { path: '/cursos', element: <Modulos />},
                 { path: '/cursos/modulos', element: <Modulos /> },
